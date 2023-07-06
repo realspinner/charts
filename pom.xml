@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <!-- This module was also published with a richer model, Gradle metadata,  -->
+  <!-- which should be used instead. Do not delete the following line which  -->
+  <!-- is to indicate to Gradle or any Gradle module metadata file consumer  -->
+  <!-- that they should prefer consuming it instead. -->
+  <!-- do_not_remove: published-with-gradle-metadata -->
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eu.hansolo.fx</groupId>
+  <artifactId>charts</artifactId>
+  <version>17.1.27</version>
+  <name>charts</name>
+  <description>A JavaFX library for scientific charts</description>
+  <url>https://github.com/HanSolo/charts/wiki</url>
+  <licenses>
+    <license>
+      <name>The Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>realspinner</id>
+      <name>Oleg Kochetov</name>
+      <email>ok@noiselab.ru</email>
+    </developer>
+  </developers>
+  <scm>
+    <!--connection>scm:git:https://HanSolo/charts</connection-->
+    <!--developerConnection>scm:git:ssh://HanSolo/charts</developerConnection-->
+    <connection>scm:git:git@github.com:realspinner/charts.git</connection>
+    <developerConnection>scm:git:git@github.com:realspinner/charts.git</developerConnection>
+    <url>https://github.com/realspinner/charts.git</url>
+  </scm>
+
+  <!--build>
+          <plugins>
+            <plugin>
+              <groupId>org.openjfx</groupId>
+              <artifactId>javafx-maven-plugin</artifactId>
+              <version>0.0.8</version>
+              <configuration>
+                <mainClass>eu.hansolo.fx.charts.Demo</mainClass>
+              </configuration>
+            </plugin>
+          </plugins>
+  </build-->
+
+  <packaging>jar</packaging>
+  <build>
+    <finalName>custom_charts</finalName>
+  </build>
+
+  <properties>
+    <maven.compiler.source>19</maven.compiler.source>
+    <maven.compiler.target>19</maven.compiler.target>
+  </properties>
+    <dependencies>
+
+    <dependency>
+      <groupId>eu.hansolo</groupId>
+      <artifactId>toolbox</artifactId>
+      <version>17.0.26</version>
+    </dependency>
+    <dependency>
+      <groupId>eu.hansolo</groupId>
+      <artifactId>toolboxfx</artifactId>
+      <version>17.0.29</version>
+
+    </dependency>
+    <dependency>
+      <groupId>eu.hansolo.fx</groupId>
+      <artifactId>heatmap</artifactId>
+      <version>17.0.12</version>
+
+    </dependency>
+    <dependency>
+      <groupId>eu.hansolo.fx</groupId>
+      <artifactId>countries</artifactId>
+      <version>17.0.23</version>
+
+    </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-base</artifactId>
+        <version>17.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-graphics</artifactId>
+        <version>17.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-controls</artifactId>
+        <version>17.0.2</version>
+      </dependency>
+      <dependency>
+        <groupId>org.openjfx</groupId>
+        <artifactId>javafx-swing</artifactId>
+        <version>17.0.2</version>
+      </dependency>
+
+    </dependencies>
+
+
+</project>
